@@ -13,7 +13,7 @@ gulp.task("build", ["clean"], function(){
 });
 gulp.task("deploy", ["build"], function(cb){
   return gulp.src('./dist/**/*')
-   .pipe(ghPages());
+   .pipe(ghPages({remoteUrl: "https://${GH_TOKEN}@${GH_REF}"}));
 });
 gulp.task("clean", function(cb){
   return del(["./dist/**/*", "./dist/**"], cb);
