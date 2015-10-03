@@ -5,7 +5,7 @@ var mtoi = require('markdown-impress');
 var ghPages = require('gulp-gh-pages');
 
 
-gulp.task("default", ["build"], function(){});
+gulp.task("default", ["build", "deploy"], function(){});
 
 gulp.task("build",["clean"], function(){
   var content = mtoi('document.md');
