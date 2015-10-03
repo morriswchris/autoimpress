@@ -7,11 +7,11 @@ var ghPages = require('gulp-gh-pages');
 
 gulp.task("default", ["deploy"], function(){});
 
-gulp.task("build",["clean"], function(){
+gulp.task("build", ["clean"], function(){
   var content = mtoi('document.md');
   return file('index.html', content, { src: true }).pipe(gulp.dest('dist'));
 });
-gulp.task("deploy", ["build"] function(cb){
+gulp.task("deploy", ["build"], function(cb){
   return gulp.src('./dist/**/*')
    .pipe(ghPages());
 });
