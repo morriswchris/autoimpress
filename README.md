@@ -1,6 +1,6 @@
 # AutoImpress
 
-Build and deploy an [https://github.com/impress/impress.js](impressjs) style presentation from a markdown file using by [https://github.com/yoshiki/markdown2impress](markdown2impress)
+Build and deploy an [impressjs](https://github.com/impress/impress.js) style presentation from a markdown file using by [markdown2impress](https://github.com/yoshiki/markdown2impress)
 
 ## System Requirements
 * `npm install -g gulp`
@@ -14,7 +14,7 @@ Build and deploy an [https://github.com/impress/impress.js](impressjs) style pre
 
 ## Modifying the Markdown file
 
-All of the configuration for the impressjs markdown file can be found [https://github.com/yoshiki/markdown2impress#slide-dividing-rule]{here}
+All of the configuration for the impressjs markdown file can be found [here](https://github.com/yoshiki/markdown2impress#slide-dividing-rule)
 
 ## Auto Deployment
 
